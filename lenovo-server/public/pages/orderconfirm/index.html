@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>结算中心</title>
+		<link rel="stylesheet" type="text/css" href="/static/reset.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<div class="pages-wrapper">
+			<div class="header-box">
+				<div class="header">
+					<ul>
+						<li><a href="javascript:vido(0)" onclick="window.history.back()"><img src="lift.png" class="return"></a></li>
+						<li>
+							<h4>结算中心</h4>
+						</li>
+						<li class="open-box"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<!--地址-->
+				<div class="address-box" onclick="window.location.href='/pages/address/index.html?reference=orderconfirm'">
+					<div class="full-phone">
+						<span class="goods">收货人：</span>
+						<span class="name"></span>
+						<span class="phone"></span>
+					</div>
+					<div class="goods-address-box">
+						<span class="goods-address">收货地址：</span>
+						<span class="detailed"></span>
+					</div>
+				</div>
+				<div class="empty" onclick="window.location.href='/pages/address/index.html?reference=orderconfirm'">
+					<img src="add.png" alt="">
+					<span>新增收货地址</span>
+				</div>
+				<div class="empty-t">
+					<img src="dizhi.png" >
+				</div>
+				<div class="bc-di">
+					<img src="dibu.png" alt="">
+				</div>
+				<div class="right-arrow">
+					<img src="/static/1.png" alt="">
+				</div>
+				<div class="left-address">
+					<img src="address.png" alt="">
+				</div>
+				<!--支付方式-->
+				<div class="payment-box">
+					<div class="payment">
+						<span class="mode">支付方式</span>
+						<span class="on-line">在线支付</span>
+					</div>
+				</div>
+				<!--配送-->
+				<div class="delivery-box">
+					<div class="delivery-address">
+						<ul class="list"></ul>
+						<div class="delivery">
+							<span>配送</span>
+							<span>快递配送</span>
+						</div>
+					</div>
+				</div>
+				<!--优惠-->
+				<div class="discount-box">
+					<ul>
+						<li class="invoice">
+							<span>发票</span>
+							<span class="red">电子 <em>(个人)</em></span>
+						</li>
+						<li class="coupon">
+							<span>优惠券</span>
+							<img src="/static/1.png" alt="">
+							<span class="choice">请选择优惠券</span>
+						</li>
+					</ul>
+				</div>
+				<!--订单备注-->
+				<div class="order-box" >
+					<p>订单备注</p>
+					<div>
+						<textarea class="input" placeholder="给商家留言，100字以内"></textarea>
+						<textarea class="service" placeholder="客户经理编码"></textarea>
+					</div>
+				</div>
+				<!--商品金额-->
+				<div class="money-box">
+					<ul>
+						<li>
+							<span>商品金额</span>
+							<span >￥<em class="actual">0.00</em></span>
+						</li>
+						<li>
+							<span>优惠</span>
+							<span class="rate">￥0.00 </span>
+						</li>
+						<li>
+							<span>运费</span>
+							<span class="freight">￥0.00</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="price-box">
+					<p class="real">实付款: ￥<span>0.00</span></p>
+					<p class="province">节省了: <span>￥0.00</span></p>
+				</div>
+				<div class="btn-box">
+					<button>提交订单</button>
+				</div>
+			</div>
+		</div>
+		<script src="/static/jquery-3.4.1.min.js"></script>
+		<script src="/static/js-cookie.js"></script>
+		<script src="/static/notice.js"></script>
+		<script src="/static/http.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

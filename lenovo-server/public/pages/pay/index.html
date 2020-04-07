@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="/static/reset.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<title>付款页</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header">
+				<a href=""><img src="lift.png" alt=""></a>
+				<h1>收银台</h1>
+			</div>
+			<div class="content">
+				<div class="prompt-wrapper">
+					<div class="prompt">
+						您的订单如果在
+						<span class="pay-time">12小时00分后</span>
+						未支付将被取消
+					</div>
+					<div class="pay-money clearfix">
+						<span>订单金额</span>
+						<span class="money-box">¥<em class="money"></em></span>
+					</div>
+					<div class="pay-bianhao clearfix">
+						<span>订单编号</span>
+						<span class="bianhao"></span>
+					</div>
+				</div>
+				<div class="quick-payment">
+					<div class="quick-title">快捷支付</div>
+					<div class="zhifubao clearfix">
+						<i></i>
+						<span>支付宝</span>
+						<i class="checkbox checked"></i>
+					</div>
+					<div class="weixin clearfix">
+						<i></i>
+						<span>微信</span>
+						<i class="checkbox"></i>
+					</div>
+					<div class="china-unionpay clearfix">
+						<i></i>
+						<i class="checkbox"></i>
+					</div>
+				</div>
+				<div class="installment-payment">
+					<div class="installment-title">分期支付</div>
+					<i class="huabei"></i>
+					<i class="zhaoshang"></i>
+				</div>
+			</div>
+			<div class="footer">
+				<span>支付宝支付</span><em></em>元
+			</div>
+		</div>
+		
+		<script src="/static/jquery-3.4.1.min.js"></script>
+		<script src="/static/js-cookie.js"></script>
+		<script src="/static/notice.js"></script>
+		<script src="/static/http.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

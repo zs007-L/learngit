@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/reset.css" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="address-picker.css"/>
+	</head>
+	<body>
+		<div class="page-wrapper list">
+			<div class="header">
+				<ul class="clearfix normal">
+					<li class="lf"><a href="javascript:void(0)" onclick="window.history.back()()"><img src="lift.png" class="return"></a></li>
+					<li class="title">
+						<h4>地址管理</h4>
+					</li>
+					<li class="rt"><a href="javascript:" class="open-box"><img src="shenglue.png" class="btn-open"></a></li>
+				</ul>
+				<ul class="clearfix add">
+					<li class="lf"><a href=""><img src="lift.png" class="return"></a></li>
+					<li class="title"><h4>管理收货地址</h4></li>
+					<li class="rt"><a href="javascript:" class="open-box"><img src="shenglue.png" class="btn-open"></a></li>
+				</ul>
+				<div id="open">
+					<a href="../home/index.html"><img src="shouye.png" >首页</a>
+					<a href=""><img src="sousu.png" >搜索</a>
+					<a href=""><img src="geren.png" >个人中心</a>
+				</div>
+			</div>
+			<div class="content">
+				<ul></ul>
+				<form action="">
+					<div>
+						<label for="">收货人:</label>
+						<input type="text" placeholder="请输入收货人姓名" class="name">
+					</div>
+					<div>
+						<label for="">手机号码:</label>
+						<input type="text" placeholder="请输入手机号码" class="phone">
+					</div>
+					<div>
+						<label for="">所在地区:</label>
+						<input type="text" class="region" placeholder="请输入省市区" onclick="clickEvent(this)">
+					</div>
+					<div>
+						<label for="">详细地址:</label>
+						<input type="text" placeholder="请输入详细地址" class="detailed-address">
+					</div>
+				</form>
+				<div class="btn-wrapper">
+					<button class="address">+新增地址</button>
+					<button class="btn-prese">保存</button>
+				</div>
+				
+			</div>
+		</div>
+		<script src="/static/jquery-3.4.1.min.js"></script>
+		<script src="/static/js-cookie.js"></script>
+		<script src="/static/notice.js"></script>
+		<script src="/static/http.js"></script>
+		<script src="regions.js"></script>
+		<script src="address-picker.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+	background-color: #f6f6f6;
+}
+.header {
+	width: 100%;
+	height: 45px;
+	background-color: #e8e8e8;
+	flex-shrink: 0;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	top: 0;
+}
+
+.header>ul {
+	padding: 0 10px;
+	text-align: center;
+}
+.title {
+	display: inline-block;
+}
+.header>div {
+	height: 40px;
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	display: none;
+}
+
+.header>div>a {
+	display: inline-block;
+	width: 70px;
+	color: #6d6d6d;
+}
+.header>div>a>img {
+	width: 16px;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+.header>ul>li {
+	height: 45px; 
+	line-height: 45px; 
+}
+
+.header>ul>li>a {vertical-align: middle;}
+
+.header>ul>li>h4 {
+	font-weight: normal;
+}
+.header>ul>li>a>.return {
+	width: 35px;
+	margin-top: 5px;
+}
+.header>ul>li>a>.btn-open {
+	width: 20px;
+	margin-top: 12px;
+}
+.add {
+	display: none;
+}
+.add>.shanchu {
+	font-size: 12px;
+	color: #797979;
+}
+/* 内容 */
+.content {
+	margin-top: 45px;
+}
+.content>.btn-wrapper {
+	margin: 70px 30px 10px;
+}
+.content>ul {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #D2D2D2;
+}
+.content>ul>li {
+	padding: 10px 10px;
+	border-top: 1px solid #D2D2D2;
+}
+.content>ul>li>.address-list-item {
+	font-size: 14px;
+}
+.content>ul>li>.address-list-item>.receive-phone {
+	padding-left: 20px;
+}
+.content>ul>li>.receive-address {
+	border-bottom: 1px solid #D2D2D2;
+	padding: 10px 0;
+	font-size: 12px;
+	color: #707070;
+}
+.content>ul>li>.operation {
+	font-size: 12px;
+	color: #797979;
+	height: 30px;
+	line-height: 30px;
+}
+.content>ul>li>.operation>.red {
+	color: #E2231A;
+}
+.content>ul>li>.operation>span.edit {
+	margin-right: 6px;
+}
+.content>ul>li>.operation>img {
+	width: 16px;
+	margin-top: 8px;
+	margin-right: 4px;
+}
+
+.content>.btn-wrapper>button {
+	width: 100%;
+	padding: 10px;
+	background-color: #e2231a;
+	border-radius: 4px;
+	color: #FFFFFF;
+}
+.content>.btn-wrapper>.btn-prese {
+	display: none;
+}
+.content>form {
+	background-color: #FFFFFF;
+	padding: 0 10px;
+	border-bottom: 1px solid #d2d2d2;
+	display: none;
+}
+.content>form>div {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #d2d2d2;
+}
+.content>form>div:last-child {
+	border-bottom: none;
+}
+.content>form>div>label {
+	display: inline-block;
+	color: #575757;
+	font-size: 12px;
+	width: 60px;
+}
+/* .content>form>div>input {
+	width: 350px;
+} */
